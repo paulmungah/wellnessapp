@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Progressactivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Progress Activity Ground"
+            android:textSize="45sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/material_dynamic_primary50"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/progress"
+            android:scaleType="center"/>
+
+        <TextView
+            android:id="@+id/recipesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report on Progress\n\n1.Track Your Workouts\nKeep a record of exercises done each day to see improvement over time.\n\n2.Monitor Weight and Measurements\nRegularly check weight or body measurements to track physical changes.\n\n3.Note Energy Levels\nRecord how energetic or tired you feel after workouts and throughout the day.\n\n4.Check Strength Gains\nTrack improvements in strength like lifting heavier weights or doing more repetitions.\n\n5.Log Your Food Intake\nKeep a simple diary of meals to see if nutrition is balanced.\n\n6.Reflect on Goals\nCompare current progress with initial goals and adjust if needed.\n\n7.Celebrate Small Wins\nRecognize and reward small achievements to stay motivated.\n\n8.Consistency is Key\nRegular tracking helps maintain consistency and improve overall health."
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

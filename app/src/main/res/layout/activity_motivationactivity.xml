@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Motivationactivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Motivation Page "
+            android:textSize="45sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/material_dynamic_primary50"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/motivation"
+            android:scaleType="center"/>
+
+        <TextView
+            android:id="@+id/recipesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motivation\n\n1.Set Goals\nSet clear and simple goals to keep yourself focused and moving forward.\n\n2.Stay Positive\nKeep a positive mindset even when things are difficult.\n\n3.Believe in Yourself\nTrust your abilities and know that you can achieve your goals.\n\n4.Keep Going\nDo not give up even when progress feels slow.\n\n5.Learn from Mistakes\nMistakes help you grow and become better.\n\n6.Stay Consistent\nSmall efforts every day lead to big results over time.\n\n7.Surround Yourself Well\nBe around people who support and encourage you.\n\n8.Celebrate Progress\nAppreciate your achievements no matter how small they are."
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exerciseactivity">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Welcome to Exercise Ground "
+            android:textSize="45sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/material_dynamic_primary50"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/exercise"
+            android:scaleType="center"/>
+
+        <TextView
+            android:id="@+id/recipesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercise\n\n1.Track\nA running track at least thrice a week will really help one improve fitness and stamina.\n\n2.Raising weights\nRaising weights at least 5kg weights not more not less will help exercise the body well and build strength.\n\n3.Skipping Rope\nIncreases heart rate and makes you used to it and can really help prevent illness.\n\n4.Push-ups\nHelps strengthen arms chest and shoulders and improves body strength.\n\n5.Squats\nHelps build strong legs and improves balance and movement.\n\n6.Plank\nHelps strengthen the core and improves posture when done regularly.\n\n7.Stretching\nHelps prevent injuries and improves flexibility before and after exercise.\n\n8.Walking\nWalking daily helps improve heart health and keeps the body active."
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
