@@ -36,7 +36,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="🔥 PUSH YOUR LIMITS\nDo 20 push-ups daily\nBuild strength & discipline"
+                android:text="🔥 PUSH YOUR LIMITS\nDo 20 push-ups daily\nBuild strength and discipline"
                 android:textSize="18sp"
                 android:textColor="#FFFFFF"
                 android:padding="20dp"/>
@@ -54,7 +54,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="🏃 RUNNING GOAL\n30 minutes daily jogging\nImprove stamina & heart health"
+                android:text="🏃 RUNNING GOAL\n30 minutes daily jogging\nImprove stamina and heart health"
                 android:textSize="18sp"
                 android:textColor="#FFFFFF"
                 android:padding="20dp"/>
