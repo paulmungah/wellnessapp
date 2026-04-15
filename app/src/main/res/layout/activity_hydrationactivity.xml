@@ -2,46 +2,142 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Hydrationactivity">
+    android:background="#E3F2FD">
 
     <LinearLayout
-
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
+        <!-- HEADER -->
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Welcome to Hydration Activity "
-            android:textSize="45sp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textColor="@color/material_dynamic_primary50"/>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:src="@drawable/hydration"
-            android:scaleType="center"/>
-
-        <TextView
-            android:id="@+id/recipesText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hydration\n\n1.Drink Water\nDrinking enough water daily at least 6 to 8 glasses will help keep the body hydrated and active.\n\n2.Morning Water\nDrinking water early in the morning helps wake up the body and start metabolism.\n\n3.Carry Water Bottle\nAlways carrying a water bottle helps remind you to drink water throughout the day.\n\n4.Drink After Exercise\nDrinking water after exercise helps replace lost fluids and keeps the body balanced.\n\n5.Fruits with Water\nEating fruits like watermelon and oranges helps add more water to the body.\n\n6.Avoid Sugary Drinks\nAvoid too many sugary drinks as they do not hydrate the body properly.\n\n7.Drink Before Sleep\nDrinking a little water before sleep helps prevent dehydration at night.\n\n8.Listen to Your Body\nDrink water whenever you feel thirsty and do not ignore the signs of dehydration."
-            android:textSize="16sp"
-            android:padding="16dp"/>
+            android:text="💧 Hydration Tracker"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:gravity="center"
+            android:paddingBottom="12dp"/>
 
+        <!-- IMAGE -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="16dp">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/hydration"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
 
+        <!-- BUTTONS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+250ml"
+                android:backgroundTint="#42A5F5"
+                android:textColor="#FFFFFF"
+                android:layout_margin="8dp"/>
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:backgroundTint="#EF5350"
+                android:textColor="#FFFFFF"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
 
+        <!-- PROGRESS -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Water Intake: 0 ml"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <!-- PROGRESS BAR -->
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progress="30"
+            android:max="100"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- TIPS CARD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💡 Tips:\n\n✔ Drink water regularly\n✔ Eat fruits 🍉\n✔ Avoid sugary drinks\n✔ Stay active"
+                android:textSize="16sp"
+                android:padding="16dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- FAKE POPUP CARD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#BBDEFB"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎉 Hydration Reminder"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#0D47A1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keep drinking water and stay healthy!"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:gravity="center"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OK"
+                    android:backgroundTint="#1E88E5"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 

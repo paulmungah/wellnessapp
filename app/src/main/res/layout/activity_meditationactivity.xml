@@ -2,44 +2,115 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Meditationactivity">
+    android:background="#0B1D26">
 
     <LinearLayout
-
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
+        <!-- HEADER -->
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Welcome to Meditation Ground "
-            android:textSize="45sp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textColor="@color/material_dynamic_primary50"/>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:src="@drawable/meditation"
-            android:scaleType="center"/>
-
-        <TextView
-            android:id="@+id/recipesText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Meditation\n\n1.Find a Quiet Place\nSit in a calm and quiet place where you will not be disturbed.\n\n2.Focus on Breathing\nFocus on your breathing slowly in and out to help relax the mind.\n\n3.Start Small\nStart with 5 to 10 minutes daily and increase time gradually.\n\n4.Close Your Eyes\nClosing your eyes helps you concentrate better and avoid distractions.\n\n5.Sit Comfortably\nSit in a comfortable position without straining your body.\n\n6.Clear Your Mind\nTry to let go of stressful thoughts and stay calm and relaxed.\n\n7.Be Consistent\nPractice meditation daily to get better results over time.\n\n8.Relax Your Body\nLet your body relax completely and feel the calmness during meditation."
-            android:textSize="16sp"
+            android:text="🧘 Meditation Zone"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#E0F7FA"
             android:padding="16dp"/>
 
+        <!-- IMAGE -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/meditation"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="20dp"/>
 
+        <!-- TIP 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1E3A4C">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌿 Find a Quiet Place\nChoose a peaceful environment to relax your mind."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:padding="18dp"/>
+        </androidx.cardview.widget.CardView>
 
+        <!-- TIP 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#15616D">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌬 Focus on Breathing\nSlowly inhale and exhale to calm your mind."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:padding="18dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- TIP 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#0F4C5C">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🧘 Sit Comfortably\nKeep your body relaxed and posture steady."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:padding="18dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- TIP 4 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#2C7DA0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🧠 Clear Your Mind\nLet go of stress and focus on peace."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:padding="18dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CALM BUTTON -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="START MEDITATION"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00B4D8"
+            android:layout_marginTop="20dp"/>
 
     </LinearLayout>
 

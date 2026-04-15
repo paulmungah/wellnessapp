@@ -2,43 +2,131 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Exerciseactivity">
+    android:background="#0D1B2A">
+
     <LinearLayout
-
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
+        <!-- HEADER -->
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Welcome to Exercise Ground "
-            android:textSize="45sp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textColor="@color/material_dynamic_primary50"/>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:src="@drawable/exercise"
-            android:scaleType="center"/>
-
-        <TextView
-            android:id="@+id/recipesText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Exercise\n\n1.Track\nA running track at least thrice a week will really help one improve fitness and stamina.\n\n2.Raising weights\nRaising weights at least 5kg weights not more not less will help exercise the body well and build strength.\n\n3.Skipping Rope\nIncreases heart rate and makes you used to it and can really help prevent illness.\n\n4.Push-ups\nHelps strengthen arms chest and shoulders and improves body strength.\n\n5.Squats\nHelps build strong legs and improves balance and movement.\n\n6.Plank\nHelps strengthen the core and improves posture when done regularly.\n\n7.Stretching\nHelps prevent injuries and improves flexibility before and after exercise.\n\n8.Walking\nWalking daily helps improve heart health and keeps the body active."
-            android:textSize="16sp"
-            android:padding="16dp"/>
+            android:text="⚡ FITNESS DASHBOARD"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:padding="14dp"
+            android:background="#1B263B"/>
 
+        <!-- CARD 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:backgroundTint="#FF6D00">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔥 PUSH YOUR LIMITS\nDo 20 push-ups daily\nBuild strength & discipline"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:padding="20dp"/>
+        </androidx.cardview.widget.CardView>
 
+        <!-- CARD 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:backgroundTint="#4CAF50">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🏃 RUNNING GOAL\n30 minutes daily jogging\nImprove stamina & heart health"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:padding="20dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CARD 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:backgroundTint="#2979FF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💪 WEIGHT TRAINING\nLift moderate weights\nBuild muscle  strength"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:padding="20dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- BUTTONS SECTION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="START WORKOUT"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF1744"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="DAILY PROGRESS"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#00C853"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="SET GOAL"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FFD600"/>
+        </LinearLayout>
+
+        <!-- ANIMATION FEEL CARD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="12dp"
+            android:backgroundTint="#6A1B9A">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚀 CONSISTENCY IS POWER\nTrain daily. Stay strong. Never quit."
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:padding="22dp"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 

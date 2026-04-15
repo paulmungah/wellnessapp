@@ -2,45 +2,178 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Nutritionactivity">
+    android:background="#0A1A2F">
 
     <LinearLayout
-
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
+        <!-- HEADER -->
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Welcome to Nutrition "
-            android:textSize="45sp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textColor="@color/material_dynamic_primary50"/>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:src="@drawable/nutrition"
-            android:scaleType="center"/>
-
-        <TextView
-            android:id="@+id/recipesText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nutrition\n\n1.Eat Balanced Meals\nEating balanced meals with proteins carbohydrates and healthy fats helps keep the body strong and healthy.\n\n2.Fruits and Vegetables\nEating fruits and vegetables daily provides vitamins and minerals needed for the body.\n\n3.Whole Grains\nChoose whole grains like brown rice and whole wheat bread for better digestion and energy.\n\n4.Protein Foods\nFoods like eggs beans and fish help build and repair body tissues.\n\n5.Healthy Fats\nInclude healthy fats like avocado and nuts for energy and brain health.\n\n6.Limit Junk Food\nAvoid too much junk food as it can harm your health over time.\n\n7.Regular Meals\nEating meals at regular times helps maintain energy levels throughout the day.\n\n8.Stay Hydrated\nDrinking enough water is important for proper digestion and overall health."
-            android:textSize="16sp"
-            android:padding="16dp"/>
+            android:text="🥗 Nutrition Guide"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:background="#1B2A41"
+            android:layout_marginBottom="12dp"/>
 
+        <!-- FRUITS ROW -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🍎 🍌 🍇 🍊 🍉 🍓 🍍 🥝 🍑"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:padding="10dp"/>
 
+        <!-- INFO CARD 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="10dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#4CAF50">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fruits give your body vitamins, minerals, and natural energy. Eating fruits daily keeps your immune system strong."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:padding="16dp"/>
+        </androidx.cardview.widget.CardView>
 
+        <!-- INFO CARD 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="10dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF9800">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vegetables and fruits together improve digestion, skin health, and energy levels throughout the day."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:padding="16dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- INFO CARD 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="10dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#2979FF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drink enough water daily and avoid too much junk food for better health and fitness."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:padding="16dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- BUTTON SECTION 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="55dp"
+                android:text="🍎 Apple"
+                android:backgroundTint="#FF1744"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="6dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="55dp"
+                android:text="🍌 Banana"
+                android:backgroundTint="#FFD600"
+                android:textColor="#000000"
+                android:layout_marginStart="6dp"/>
+        </LinearLayout>
+
+        <!-- BUTTON SECTION 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="55dp"
+                android:text="🍇 Grapes"
+                android:backgroundTint="#9C27B0"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="6dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="55dp"
+                android:text="🍊 Orange"
+                android:backgroundTint="#FF6D00"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="6dp"/>
+        </LinearLayout>
+
+        <!-- BUTTON SECTION 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="55dp"
+                android:text="🍉 Watermelon"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="6dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="55dp"
+                android:text="🥝 Kiwi"
+                android:backgroundTint="#00C853"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="6dp"/>
+        </LinearLayout>
+
+        <!-- FINAL BUTTON -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="🔥 EXPLORE MORE FOODS"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#E91E63"
+            android:layout_marginTop="16dp"/>
 
     </LinearLayout>
 

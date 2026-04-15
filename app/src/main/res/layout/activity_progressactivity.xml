@@ -2,44 +2,158 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Progressactivity">
+    android:background="#0B1220">
 
     <LinearLayout
-
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
+        <!-- HEADER -->
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Progress Activity Ground"
-            android:textSize="45sp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textColor="@color/material_dynamic_primary50"/>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:src="@drawable/progress"
-            android:scaleType="center"/>
-
-        <TextView
-            android:id="@+id/recipesText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Report on Progress\n\n1.Track Your Workouts\nKeep a record of exercises done each day to see improvement over time.\n\n2.Monitor Weight and Measurements\nRegularly check weight or body measurements to track physical changes.\n\n3.Note Energy Levels\nRecord how energetic or tired you feel after workouts and throughout the day.\n\n4.Check Strength Gains\nTrack improvements in strength like lifting heavier weights or doing more repetitions.\n\n5.Log Your Food Intake\nKeep a simple diary of meals to see if nutrition is balanced.\n\n6.Reflect on Goals\nCompare current progress with initial goals and adjust if needed.\n\n7.Celebrate Small Wins\nRecognize and reward small achievements to stay motivated.\n\n8.Consistency is Key\nRegular tracking helps maintain consistency and improve overall health."
-            android:textSize="16sp"
-            android:padding="16dp"/>
+            android:text="📊 Fitness Progress"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:background="#1F2A44"
+            android:layout_marginBottom="16dp"/>
 
+        <!-- TOP IMAGE CARD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="10dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#263238">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/progress"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
 
+        <!-- STATS ROW -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
+            <!-- CARD 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                app:cardCornerRadius="18dp"
+                android:backgroundTint="#4CAF50">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="🔥\nWorkouts"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CARD 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                app:cardCornerRadius="18dp"
+                android:backgroundTint="#FF6D00">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="⚖\nWeight"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <!-- PROGRESS CARDS -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#2979FF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💪 Strength is improving daily\nKeep tracking your reps and weights."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:padding="16dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#9C27B0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📈 Consistency builds results\nStay focused on daily progress."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:padding="16dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ACTION BUTTONS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:text="VIEW REPORT"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF1744"
+                android:layout_marginEnd="6dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:text="UPDATE"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#00C853"
+                android:layout_marginStart="6dp"/>
+        </LinearLayout>
+
+        <!-- FINAL CTA -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="🏆 VIEW ACHIEVEMENTS"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFD600"
+            android:layout_marginTop="14dp"/>
 
     </LinearLayout>
 
