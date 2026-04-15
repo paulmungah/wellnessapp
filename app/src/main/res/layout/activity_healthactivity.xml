@@ -2,6 +2,7 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F1F8E9">
@@ -52,11 +53,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/fruit"
-                    android:scaleType="centerCrop"/>
+
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -80,11 +77,6 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/chicken"
-                    android:scaleType="centerCrop"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -108,11 +100,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/vegetables"
-                    android:scaleType="centerCrop"/>
+
 
                 <TextView
                     android:layout_width="wrap_content"
